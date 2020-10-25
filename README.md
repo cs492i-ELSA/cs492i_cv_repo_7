@@ -4,7 +4,7 @@
 ## Overview
 This is the final repository for CS492(I) Computer Vision Task (supervised by Prof. Seunghoon Hong of KAIST CS) of Team 7. We have implemented our method, SimCLR on attention model followed by semisupervised learning on unlabeled data with label propagation and consistency regularization. 
 
-### Members
+## Members
 * Juneseok Choi (20190665)
 * Minyoung Hwang (20170738)
 * Junghyun Lee(20170500)
@@ -24,9 +24,9 @@ main.py: loads pretrained model and conducts fine tuning using
 
 Stores LaTex raw files and the image files for the final report.
 
-### Options
+## Options
 
-## pretrain.py
+### pretrain.py:
 
 ### --name (default = 'nothing')
 
@@ -80,7 +80,7 @@ The image is resized to this value and then becomes imsize through RandomResized
 
 The image is resized to this value before being fed into the model.
 
-## main.py
+### main.py
 You can run it without any commands, then it will conduct a method we have proposed.
 Notice that you should set at least one of them as true.
 
@@ -93,7 +93,7 @@ If true, then the model uses consistency loss term.
 if true, then the model uses label propagation.
 
 
-### Dependencies
+## Dependencies
 
 Since the running environment was NSML, basic packages such as torch were already installed. Thus we only write here packages that have to be newly installed into NSML.
 
