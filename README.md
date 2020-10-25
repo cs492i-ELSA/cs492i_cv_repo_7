@@ -2,7 +2,7 @@
 
 
 ## Overview
-This is the final repository for CS492(I) Computer Vision Task (supervised by Prof. Seunghoon Hong of KAIST CS) of Team 7.
+This is the final repository for CS492(I) Computer Vision Task (supervised by Prof. Seunghoon Hong of KAIST CS) of Team 7. We have implemented our method, semisupervised learning on unlabeled data with label propagation and consistency regularization. 
 
 ### Members
 * Juneseok Choi (20190665)
@@ -13,7 +13,9 @@ This is the final repository for CS492(I) Computer Vision Task (supervised by Pr
 
 ## Options
 
-The usual NSML commands are still applicable, and so we will only introduce the new options
+The usual NSML commands are still applicable, and so we will only introduce the new options.
+You can run it without any commands, then it will conduct a method we have proposed.
+Notice that you should set at least one of them as true.
 
 ### --isUDA (default=True)
 
