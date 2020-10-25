@@ -49,7 +49,7 @@ If set to True, uses LARS optimizer on top of the selected optimizer.
 
 If set to True, automatically decides the learning rate based on the batch size (0.3 * batchsize / 256)
 
-### scheduler (default = 'exp')
+### --scheduler (default = 'exp')
 
 Chooses the scheduler. Can be set to 'linear' to choose MultiStepLR or to 'exp' to choose ExponentialLR.
 
