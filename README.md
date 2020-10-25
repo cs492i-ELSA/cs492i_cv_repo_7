@@ -11,6 +11,8 @@ This is the final repository for CS492(I) Computer Vision Task (supervised by Pr
 
 ## pretrain.py
 
+This code is used to pretrain a model before the fine-tuning process. 
+
 ### Options
 
 ### --name (default = 'nothing')
@@ -21,7 +23,7 @@ Defines the name of the session.
 
 Selects the ids of the GPUs to use.
 
-### --batchsize (default varies depending on models)
+### --batchsize (default varies depending on the model)
 
 Defines the batch size. If the value is set to -1, then the code chooses it to the maximum batch size possible for the selected model.
 
