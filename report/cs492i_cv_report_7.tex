@@ -80,18 +80,16 @@
 		\item We show empirically that as long as one considers methods that introduces improvements in non-overlapping way (i.e. \enquote{orthogonal}), then combining them leads to much better accuracy.
 	\end{itemize}
 	
+	\subsection{Preliminaries}
 	
-	
-	\section{Preliminaries}
-	
-	\subsection{Naver Fashion Dataset/Resources}
+	\subsubsection{Naver Fashion Dataset/Resources}
 	Naver Fashion Dataset has $58735$ unlabeled images and $1060$ training labeled images.
 	Due to the nature of our task, we weren't given any details of the test set.
 	We note that even when compared to $1\%$ of the ImageNet ILSVRC-2012\cite{ILSVRC15}, the size of the given training data was too small.
 	We also had some constraints on the amount of resources provided by NSML\cite{NSML}.
 	
 	
-	\subsection{Assumptions}
+	\subsubsection{Assumptions}
 	In this subsection, we discuss some common underlying assumptions in SSL.
 	% , which can be summarized as follows: there is some informative correlation between the marginal distribution $p(x)$ and the posterior $p(y|x)$, where $x$ is a data and $y$ is a label.
 	These assumptions are necessary in the sense that if they are not satisfied, then additional unlabeled data leads to degradation in performance, implying breakdown of the SSL framework.
@@ -106,7 +104,7 @@
 	A simple argument\cite{EH20} can be used to show that this assumption is actually a counterpart to the smoothness assumption.
 	
 	
-	\section{Methodology}
+	\section{Method}
 	%In the following, we start with introducing the overall structure of our implementation, 
 	Our approach consists of two part; representation learning and fine tuning.
 	Let us explain each part in detail, then propose a method to combine all the mentioned algorithms.
@@ -192,7 +190,7 @@
 	\subsection{Full Procedure.} To begin with, we train our self-attention model using SimCLR and move to finetuning. Model conducts classification task for finetuning. Finetuning procedure is divided into three sections. During the first section, model uses only labeled data. In the middle section, unlabeled data is inserted with pseudo labels resulted from label propagation. In last section, consistency regularization loss term is added with pairs of augmentation.\\
 	\textbf{Advantages over previous approaches.} Our approach is a combination of well-known previous methods; label propagation \cite{Iscen2019} and consistency regularization \cite{Xie2020}. There are problems in using each one alone. In trivial, consistency regularization works well after model's accuracy increases to some extent. Label propagation seems to be direct solution for the problem, but it is easy to converge to trivial solution, since augmentation on inputs for classification is weak. We expect that addition of consistency term may help the model to conduct classification task referring to general feature of inputs and escape such regions. We confirmed our belief through ablation test in \textbf{Section} 4.
 	
-	\section{Experiments}
+	\section{Main results}
 	% \cite{EH20} observes that the choice of data sets and their partitioning have a significant impact on the relative performance of different learning algorithms
 	% In the case of SSL, some critical choices include amount of labeled datas, baseline model.
 	% This work won't be considering a diverse range of datasets, because the only dataset available for use was the Naver Fashion Datset, whose training-test split was also beyond our control.
