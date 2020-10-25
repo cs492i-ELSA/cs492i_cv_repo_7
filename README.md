@@ -2,7 +2,7 @@
 
 
 ## Overview
-This is the final repository for CS492(I) Computer Vision Task (supervised by Prof. Seunghoon Hong of KAIST CS) of Team 5.
+This is the final repository for CS492(I) Computer Vision Task (supervised by Prof. Seunghoon Hong of KAIST CS) of Team 7.
 
 ### Members
 * Juneseok Choi (20190665)
