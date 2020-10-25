@@ -81,7 +81,7 @@ The image is resized to this value and then becomes imsize through RandomResized
 
 The image is resized to this value before being fed into the model.
 
-### main.py
+### main.py:
 You can run it without any commands, then it will conduct a method we have proposed.
 Notice that you should set at least one of them as true.
 
