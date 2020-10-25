@@ -18,6 +18,7 @@ Captured model with the best performance.
 ### codes
 
 pretrain.py: pretraining using SimCLR on attention model.
+
 main.py: loads pretrained model and conducts fine tuning using 
 
 ### report
