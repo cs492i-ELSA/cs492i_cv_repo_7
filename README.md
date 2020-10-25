@@ -41,6 +41,10 @@ Since the running environment was NSML, basic packages such as torch were alread
 
 ## Directories
 
+### Best Model
+
+Captured model with the best performance.
+
 ### codes
 
 Stores all the codes.
